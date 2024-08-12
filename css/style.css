@@ -1,0 +1,75 @@
+.div1 h1 {
+    color: aqua;
+    background-color: brown;
+}
+
+.div2 h1 {
+    color: aquamarine;
+    background-color: blue;
+}
+
+section .s1 {
+    background-color: aliceblue;
+    color: aliceblue;
+}
+
+h2 {
+    color: red;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu li {
+    margin: 10px;
+    list-style: none;
+}
+
+.menu li {
+    text-decoration: none;
+}
+footer{
+    text-align: center;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.row div{
+    height: 45vh;
+    width: 35%;
+    margin: 10px;
+    border: 1px solid black;
+}
+.row div input,.row div label{
+    margin-left: 100px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:#00ff00;
+    text-decoration: underline;
+}
+@media(max-device-width:600px){
+    .menu{
+        display: none;
+    }
+    footer{
+        font-size: 30px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row div{
+        width:100%;
+    }
+    .row div img{
+        width: 100%;
+    }
+    body{
+        background-color: #00ff00;
+    }
+}
