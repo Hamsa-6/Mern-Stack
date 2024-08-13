@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <input type="text" id="input1">
+    <h1 id="h1_id">Javascript</h1>
+    <h2 id="h2_id">Welcome</h2>
+    <button id="btn_id">Clicked</button>
+</body>
+<script>
+    //document.getElementById("btn_id").addEventListener("click",news);
+    document.querySelector("btn_id").addEventListener("click",news);
+    function news() {
+        let values = document.getElementById("input1").value
+        if (values == "") {
+            alert("Enter Your Name");
+        }
+        else {
+            document.getElementById("h1_id").innerHTML = "Hello! " + values;
+        }
+
+        document.getElementById("h2_id").innerHTML = "Good Morning";
+
+    }
+
+</script>
+
+</html>

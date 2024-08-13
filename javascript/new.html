@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .redBorder {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="tb1" /><br>
+    <button id="click">CLICK</button>
+    <script>
+        chgRed = () => {
+            let val = document.getElementById("tb1").value;
+            if (val == "") {
+                tb1 = document.querySelector("#tb1");
+                tb1.classList.add('redBorder');
+            }
+            else {
+                tb1.classList.remove('redBorder');
+            }
+
+        }
+        document.querySelector("#click").addEventListener("click", chgRed)
+    </script>
+</body>
+
+</html>

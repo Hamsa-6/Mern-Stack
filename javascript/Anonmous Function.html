@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <style>
+        .red {
+            color: red;
+        }
+
+        .blue {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="h1_id">Hamsa</h1>
+    <button id="blue_id">Blue</button>
+    <button id="red_id">Red</button>
+</body>
+<script>
+    var classH1 = document.querySelector("#h1_id").classList;
+    chBlue = () => {
+        classH1.add('red');
+        classH1.remove('blue');
+    }
+    chRed = () => {
+        classH1.add('blue');
+        classH1.remove('red');
+    }
+    document.querySelector("#blue_id").addEventListener("click", chBlue);
+    document.querySelector("#red_id").addEventListener("click", chRed);
+
+</script>
+
+</html>
