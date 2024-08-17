@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <nav>
+        <ul class="nav-list">
+            <li class="brand"><a href="home.html">BREWBERRY</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <div id="login">
+    <div id="login-container">
+        <form>
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" name="email" required><br>
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" name="password" required><br>   
+            <input type="submit" value="Login">
+            <p class="login-link">Don't have an account? <a href="register.html">Register</a></p>
+        </form>
+    </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Blueberry Cafe. All Rights Reserved.</p>
+    </footer>
+</body>
+<script>
+    async function getapi() {
+        //  let data = {"name": "morpheus","job": "leader"}
+        let email = document.getElementById("login-email").value;
+        let pass = document.getElementById("login-password").value;
+        let data = {
+            "email": email,
+            "password": pass
+        };
+        //public  url is given
+        let res = await fetch("https://reqres.in/api/login", { "method": "POST", body: JSON.stringify(data), headers: { "content-type": "application/json" } });
+        let json = await res.json();
+        console.log(json);
+        console.log(res);
+    }
+</script>
+
+</html>
