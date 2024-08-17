@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textbox and Button Example</title>
+</head>
+<body>
+
+    <h2>Enter a Value</h2>
+    <input type="text" id="inputBox" placeholder="Type something..."><br><br>
+    <button onclick="addToArray()">Add</button>
+
+    <script>
+        let myArray = [];
+        function addToArray() {
+            let inputValue = document.getElementById('inputBox').value;
+            myArray.push(inputValue);
+            console.log(myArray);
+            document.getElementById('inputBox').value = '';
+        }
+    </script>
+
+</body>
+</html>
