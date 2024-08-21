@@ -18,19 +18,18 @@
 </nav>
 <br>
 <div class="container">
-  <!-- Slideshow Section for Classic Avocado Toast -->
   <div class="slideshow-container" id="slideshow1">
     <div class="mySlides fade">
-      <img src="image/av.jpeg" style="width:400px;height:300px">
+      <img src="image/av.jpeg" alt="Avocado Toast">
     </div>
     <div class="mySlides fade">
-      <img src="image/av1.jpeg" style="width:400px;height:300px">
+      <img src="image/av1.jpeg" alt="Avocado Toast 1">
     </div>
     <div class="mySlides fade">
-      <img src="image/av2.jpeg" style="width:400px;height:300px">
+      <img src="image/av2.jpeg" alt="Avocado Toast 2">
     </div>
   </div>
-  <!-- Description Section for Classic Avocado Toast -->
+ 
   <div class="description-container">
     <h2>Classic Avocado Toast</h2>
     <p>Our Classic Avocado Toast is a customer favorite. Enjoy freshly toasted sourdough bread topped with creamy avocado, cherry tomatoes, a sprinkle of sea salt, and a dash of lemon juice. It's a perfect start to your day, offering a healthy and delicious balance of flavors.</p>
@@ -39,49 +38,48 @@
 </div>
 
 <div class="container">
-    <!-- Slideshow Section for Classic Avocado Toast -->
-    <div class="slideshow-container" id="slideshow2">
-      <div class="mySlides fade">
-        <img src="image/cp.jpg" style="width:400px;height:300px">
-      </div>
-      <div class="mySlides fade">
-        <img src="image/cp1.jpg" style="width:400px;height:300px">
-      </div>
-      <div class="mySlides fade">
-        <img src="image/cp2.jpg" style="width:400px;height:300px">
-      </div>
+  <div class="slideshow-container" id="slideshow2">
+    <div class="mySlides fade">
+      <img src="image/cp.jpg" alt="Cappuccino">
     </div>
-    <!-- Description Section for Classic Avocado Toast -->
-    <div class="description-container">
-      <h2>Classic Cappuccino</h2>
-      <p>Our Classic Cappuccino is a rich and aromatic coffee drink that combines the boldness of freshly brewed espresso with the creaminess of steamed milk, topped with a light layer of frothy milk foam. Perfectly balanced, each sip delivers a harmonious blend of robust coffee flavor and velvety texture.</p>
-      <p>Whether you’re looking to kickstart your day or enjoy a relaxing afternoon break, our Cappuccino is a timeless choice that pairs well with a fresh pastry or a moment of quiet reflection at Brewberry Cafe. Indulge in this café classic, made just the way you like it—available in both regular and decaf options.</p>
+    <div class="mySlides fade">
+      <img src="image/cp1.jpg" alt="Cappuccino 1">
+    </div>
+    <div class="mySlides fade">
+      <img src="image/cp2.jpg" alt="Cappuccino 2">
     </div>
   </div>
-  <div class="container">
-    <!-- Slideshow Section for Classic Avocado Toast -->
-    <div class="slideshow-container" id="slideshow3">
-      <div class="mySlides fade">
-        <img src="image/mv.png" style="width:400px;height:300px">
-      </div>
-      <div class="mySlides fade">
-        <img src="image/mv1.png" style="width:400px;height:300px">
-      </div>
-      <div class="mySlides fade">
-        <img src="image/mv2.jpg" style="width:400px;height:300px">
-      </div>
+  <div class="description-container">
+    <h2>Classic Cappuccino</h2>
+    <p>Our Classic Cappuccino is a rich and aromatic coffee drink that combines the boldness of freshly brewed espresso with the creaminess of steamed milk, topped with a light layer of frothy milk foam. Perfectly balanced, each sip delivers a harmonious blend of robust coffee flavor and velvety texture.</p>
+    <p>Whether you’re looking to kickstart your day or enjoy a relaxing afternoon break, our Cappuccino is a timeless choice that pairs well with a fresh pastry or a moment of quiet reflection at Brewberry Cafe. Indulge in this café classic, made just the way you like it—available in both regular and decaf options.</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="slideshow-container" id="slideshow3">
+    <div class="mySlides fade">
+      <img src="image/mv.png" alt="Blueberry Muffin">
     </div>
-    <!-- Description Section for Classic Avocado Toast -->
-    <div class="description-container">
-      <h2>Fresh Blueberry Muffin</h2>
-      <p>Start your day with our Fresh Blueberry Muffin, a delightful treat bursting with juicy blueberries and a hint of vanilla. Each muffin is baked to golden perfection, with a tender, moist crumb that melts in your mouth. The sweet and tangy blueberries are complemented by a lightly crisp, sugar-dusted top, making every bite a perfect balance of flavors and textures.</p>
-      <p>Ideal for breakfast on the go or as a midday snack, our Blueberry Muffin pairs beautifully with a hot cup of coffee or a refreshing glass of iced tea</p>
+    <div class="mySlides fade">
+      <img src="image/mv1.png" alt="Blueberry Muffin 1">
+    </div>
+    <div class="mySlides fade">
+      <img src="image/mv2.jpg" alt="Blueberry Muffin 2">
     </div>
   </div>
- 
-  <footer>
-    <p>&copy; 2024 Brewberry Café</p>
+
+  <div class="description-container">
+    <h2>Fresh Blueberry Muffin</h2>
+    <p>Start your day with our Fresh Blueberry Muffin, a delightful treat bursting with juicy blueberries and a hint of vanilla. Each muffin is baked to golden perfection, with a tender, moist crumb that melts in your mouth. The sweet and tangy blueberries are complemented by a lightly crisp, sugar-dusted top, making every bite a perfect balance of flavors and textures.</p>
+    <p>Ideal for breakfast on the go or as a midday snack, our Blueberry Muffin pairs beautifully with a hot cup of coffee or a refreshing glass of iced tea.</p>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2024 Brewberry Café</p>
 </footer>
+
 <script>
 function showSlides(slideshowId) {
   let slideIndex = 0;
@@ -95,7 +93,7 @@ function showSlides(slideshowId) {
     slideIndex++;
     if (slideIndex > totalSlides) {slideIndex = 1}    
     slides[slideIndex-1].style.display = "block";  
-    setTimeout(displaySlides, 3000); // Change image every 3 seconds
+    setTimeout(displaySlides, 3000); 
   }
 
   displaySlides();
