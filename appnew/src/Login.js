@@ -7,8 +7,6 @@ function Login() {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-
-        // Log the user's input data to the console
         console.log('User Data:', { email, password });
 
         // Reset error message
