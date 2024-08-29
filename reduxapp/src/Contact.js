@@ -24,6 +24,7 @@ function Contact()
         <input type="button" value="Add" onClick={add}/><br></br>
         <input type="button" value="Sub" onClick={sub}/>
         <h1>From redux {counterVal}</h1>
+        <p>You can reach us at mailhamsas@gmail.com</p>
         </div>
     )
 };

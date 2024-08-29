@@ -1,10 +1,11 @@
 import { useDispatch, useSelector } from "react-redux";
 import Header from "./Header";
+import { useState } from "react";
 function Home()
 {
     const counterVal=useSelector((state)=>state.counter);
     const dispatch=useDispatch();
-
+    const [status,setStatus]=useState(false);
     const add=()=>
     {
         dispatch({
@@ -27,6 +28,7 @@ function Home()
     return(
         <div>
              <Header/>  
+             {(status)?<p className="red">This is paragraph</p>:null}
         <h2>This is Home page</h2>
         <input type="button" value="Add" onClick={add}/><br></br>
         <input type="button" value="Sub" onClick={sub}/>

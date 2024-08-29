@@ -5,6 +5,7 @@ function Header(){
             <li><NavLink to="/Home">Home</NavLink></li>
             <li><NavLink to="/Abouts">About</NavLink></li>
             <li><NavLink to ="/Contact">Contact</NavLink></li>
+            <li><NavLink to="/Web">Web</NavLink></li>
         </ul>
     );
 }
